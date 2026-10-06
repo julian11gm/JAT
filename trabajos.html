@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trabajos · Furgones y Carrocerías JAT</title>
+<meta name="description" content="Galería de furgones y carrocerías fabricados y reparados por JAT en Cartagenita, Facatativá, Cundinamarca.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1A2B5F; --navy-deep:#111D44; --red:#D9232D; --red-dark:#B51A23;
+  --bg:#FFFFFF; --steel:#EBEFF4; --line:#D3DAE4; --ink:#14214A; --muted:#55617D;
+  --on-dark:#FFFFFF; --wa:#25D366;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1630; --steel:#16224A; --line:#2A3866; --ink:#EEF1F8; --muted:#A9B3CC; --navy:#22357A; --navy-deep:#0A1128;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1630; --steel:#16224A; --line:#2A3866; --ink:#EEF1F8; --muted:#A9B3CC; --navy:#22357A; --navy-deep:#0A1128;
+}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:4px}
+.wrap{width:min(1160px,100% - 2.5rem);margin-inline:auto}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",sans-serif;line-height:1.02;margin:0;letter-spacing:.005em}
+p{margin:0 0 1em}
+
+/* Header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:1rem;min-height:68px}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+.brand img{width:48px;height:48px;border-radius:50%;background:#fff;object-fit:cover;border:2px solid var(--navy)}
+.brand span{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1.2rem;line-height:1.05}
+.brand small{display:block;font-family:"Barlow",sans-serif;font-weight:500;font-size:.8rem;color:var(--muted)}
+nav{margin-left:auto;display:flex;gap:1.6rem;align-items:center}
+nav a{text-decoration:none;font-weight:600;font-size:.98rem}
+nav a:hover,nav a[aria-current]{color:var(--red)}
+.btn{display:inline-flex;align-items:center;gap:.55rem;font-weight:600;text-decoration:none;border-radius:6px;padding:.8rem 1.25rem;font-size:1rem;border:2px solid transparent;transition:background .15s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-dark)}
+@media (max-width:760px){nav .navlink{display:none} .bar .btn{padding:.6rem .9rem;font-size:.92rem}}
+
+/* Page head */
+.phead{background:var(--navy-deep);color:#fff;padding:3.5rem 0 3rem}
+.back{display:inline-flex;align-items:center;gap:.4rem;color:#C9D0E2;text-decoration:none;font-weight:600;font-size:.95rem;margin-bottom:1.4rem}
+.back:hover{color:#fff}
+.back svg{width:18px;height:18px}
+.phead h1{font-size:clamp(2.6rem,6vw,4.6rem);font-weight:800;text-transform:uppercase}
+.stripes{display:flex;align-items:center;gap:1rem;margin:1.3rem 0 1.2rem}
+.stripes i{flex:1;max-width:90px;height:14px;background:repeating-linear-gradient(to bottom,var(--red) 0 4px,transparent 4px 9px)}
+.phead p{font-size:1.15rem;color:#D5DBEA;max-width:38rem;margin:0}
+
+/* Gallery */
+section{padding:3.5rem 0 5rem}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.gal figure{margin:0;position:relative;background:var(--navy-deep);overflow:hidden;border-radius:4px;aspect-ratio:4/3}
+.gal button{all:unset;display:block;width:100%;height:100%;cursor:zoom-in}
+.gal button:focus-visible{outline:3px solid var(--red);outline-offset:-3px}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.gal figure:hover img{transform:scale(1.03)}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.6rem .9rem .7rem;color:#fff;font-weight:600;font-size:.95rem;background:linear-gradient(transparent,rgba(10,17,40,.85));pointer-events:none}
+.gal .slot{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;background:transparent;border:2px dashed var(--line);color:var(--muted);text-align:center;padding:1rem}
+.gal .slot svg{width:40px;height:40px;opacity:.6}
+.gal .slot span{font-weight:600;font-size:.95rem}
+@media (max-width:860px){.gal{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.gal{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.gal img{transition:none}}
+
+.cta{margin-top:3rem;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:space-between;padding:2rem;background:var(--steel);border-left:6px solid var(--red);border-radius:4px}
+.cta h2{font-size:clamp(1.7rem,3vw,2.3rem);font-weight:800}
+.cta p{margin:.4rem 0 0;color:var(--muted)}
+
+/* Lightbox */
+dialog.lb{border:0;padding:0;background:transparent;max-width:min(1100px,94vw);max-height:92vh}
+dialog.lb::backdrop{background:rgba(5,9,22,.9)}
+dialog.lb img{max-width:100%;max-height:84vh;object-fit:contain;border-radius:4px;margin:auto}
+dialog.lb p{color:#fff;text-align:center;font-weight:600;margin:.7rem 0 0}
+dialog.lb .x{position:fixed;top:1rem;right:1rem;width:44px;height:44px;border-radius:50%;border:0;background:var(--red);color:#fff;font-size:1.6rem;line-height:1;cursor:pointer}
+
+/* Footer */
+footer{background:var(--navy-deep);color:#C9D0E2;padding:3rem 0 6rem}
+.foot{display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:center}
+.foot .brand span{color:#fff}
+.foot .brand small{color:#A9B3CC}
+.foot p{margin:0;font-size:.95rem}
+.foot a{color:#fff}
+
+/* WhatsApp float */
+.wa{position:fixed;right:max(1.1rem,env(safe-area-inset-right,0px));bottom:calc(1.1rem + env(safe-area-inset-bottom,0px));z-index:50;display:flex;align-items:center;gap:.6rem;background:var(--wa);color:#fff;text-decoration:none;font-weight:600;border-radius:999px;padding:.85rem 1.2rem .85rem .95rem;box-shadow:0 6px 18px rgba(0,0,0,.28)}
+.wa svg{width:30px;height:30px}
+.wa:hover{background:#1FB959}
+@media (max-width:560px){.wa span{display:none}.wa{padding:.9rem}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Furgones y Carrocerías JAT, inicio">
+      <img src="img/logo.jpg" alt="">
+      <span>Furgones y Carrocerías JAT<small>Facatativá, Cundinamarca</small></span>
+    </a>
+    <nav aria-label="Principal">
+      <a class="navlink" href="index.html#taller">El taller</a>
+      <a class="navlink" href="index.html#servicios">Servicios</a>
+      <a class="navlink" href="trabajos.html" aria-current="page">Trabajos</a>
+      <a class="navlink" href="index.html#ubicacion">Ubicación</a>
+      <a class="btn btn-red" href="https://wa.me/573207430415?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20JAT%20y%20quiero%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener">Cotizar</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="phead">
+    <div class="wrap">
+      <a class="back" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Volver al inicio</a>
+      <h1>Nuestros trabajos</h1>
+      <div class="stripes" aria-hidden="true"><i></i><i></i></div>
+      <p>Furgones y carrocerías fabricados, reparados y personalizados en nuestro taller de Cartagenita, Facatativá.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <!--
+        Para agregar una foto nueva:
+        1. Guarda la imagen en la carpeta img/
+        2. Copia un bloque <figure> con foto y cambia src, alt y el texto del figcaption
+        3. Borra uno de los espacios "Próximamente" (class="slot") si quieres mantener la cuadrícula pareja
+      -->
+      <div class="gal">
+        <figure><button type="button"><img src="img/jac-refrigerado.jpg" alt="Furgón refrigerado sobre camión JAC blanco" loading="lazy"></button><figcaption>Furgón refrigerado · JAC</figcaption></figure>
+        <figure><button type="button"><img src="img/taller-en-proceso.jpg" alt="Fachada del taller JAT con furgones en proceso" loading="lazy"></button><figcaption>Trabajos en proceso en el taller</figcaption></figure>
+
+        <figure class="slot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-8 8"/></svg><span>Próximamente</span></figure>
+        <figure class="slot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-8 8"/></svg><span>Próximamente</span></figure>
+        <figure class="slot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-8 8"/></svg><span>Próximamente</span></figure>
+        <figure class="slot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-8 8"/></svg><span>Próximamente</span></figure>
+      </div>
+
+      <div class="cta">
+        <div>
+          <h2>¿Necesitas un furgón como estos?</h2>
+          <p>Escríbenos por WhatsApp y te enviamos una cotización o más fotos de trabajos similares.</p>
+        </div>
+        <a class="btn btn-red" href="https://wa.me/573207430415?text=Hola%2C%20vi%20los%20trabajos%20de%20JAT%20y%20quiero%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<dialog class="lb" aria-label="Foto ampliada">
+  <button class="x" type="button" aria-label="Cerrar">&times;</button>
+  <img alt="">
+  <p></p>
+</dialog>
+
+<footer>
+  <div class="wrap foot">
+    <a class="brand" href="index.html">
+      <img src="img/logo.jpg" alt="">
+      <span>Furgones y Carrocerías JAT<small>Rompoy Cartagenita, Facatativá</small></span>
+    </a>
+    <p>WhatsApp: <a href="https://wa.me/573207430415?text=Hola%2C%20vi%20la%20p%C3%A1gina%20de%20JAT%20y%20quiero%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener">320 743 0415</a></p>
+    <p>© <span id="y">2026</span> JAT. Fabricación y reparación de furgones.</p>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/573207430415?text=Hola%2C%20vi%20los%20trabajos%20de%20JAT%20y%20quiero%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al 320 743 0415"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.870 9.870 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.860 9.860 0 0 1-1.510-5.260c.001-5.450 4.436-9.884 9.888-9.884 2.640 0 5.122 1.030 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.450-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.050 0C5.495 0 .160 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 0 0-3.480-8.413Z"/></svg><span>Escríbenos</span></a>
+
+<script>
+try{document.getElementById('y').textContent=new Date().getFullYear()}catch(e){}
+(function(){
+  var lb=document.querySelector('dialog.lb');
+  if(!lb||!lb.showModal)return;
+  var big=lb.querySelector('img'),cap=lb.querySelector('p');
+  document.querySelectorAll('.gal button').forEach(function(b){
+    b.addEventListener('click',function(){
+      var img=b.querySelector('img'),fc=b.parentNode.querySelector('figcaption');
+      big.src=img.src;big.alt=img.alt;cap.textContent=fc?fc.textContent:'';
+      lb.showModal();
+    });
+  });
+  lb.querySelector('.x').addEventListener('click',function(){lb.close()});
+  lb.addEventListener('click',function(e){if(e.target===lb)lb.close()});
+})();
+</script>
+</body>
+</html>
