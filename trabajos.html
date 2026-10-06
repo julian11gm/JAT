@@ -69,9 +69,6 @@ section{padding:3.5rem 0 5rem}
 .gal img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
 .gal figure:hover img{transform:scale(1.03)}
 .gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.6rem .9rem .7rem;color:#fff;font-weight:600;font-size:.95rem;background:linear-gradient(transparent,rgba(10,17,40,.85));pointer-events:none}
-.gal .slot{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;background:transparent;border:2px dashed var(--line);color:var(--muted);text-align:center;padding:1rem}
-.gal .slot svg{width:40px;height:40px;opacity:.6}
-.gal .slot span{font-weight:600;font-size:.95rem}
 @media (max-width:860px){.gal{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.gal{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.gal img{transition:none}}
@@ -136,16 +133,15 @@ footer{background:var(--navy-deep);color:#C9D0E2;padding:3rem 0 6rem}
         Para agregar una foto nueva:
         1. Guarda la imagen en la carpeta img/
         2. Copia un bloque <figure> con foto y cambia src, alt y el texto del figcaption
-        3. Borra uno de los espacios "Próximamente" (class="slot") si quieres mantener la cuadrícula pareja
       -->
       <div class="gal">
         <figure><button type="button"><img src="img/jac-refrigerado.jpg" alt="Furgón refrigerado sobre camión JAC blanco" loading="lazy"></button><figcaption>Furgón refrigerado · JAC</figcaption></figure>
         <figure><button type="button"><img src="img/taller-en-proceso.jpg" alt="Fachada del taller JAT con furgones en proceso" loading="lazy"></button><figcaption>Trabajos en proceso en el taller</figcaption></figure>
 
-        <figure class="slot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-8 8"/></svg><span>Próximamente</span></figure>
-        <figure class="slot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-8 8"/></svg><span>Próximamente</span></figure>
-        <figure class="slot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-8 8"/></svg><span>Próximamente</span></figure>
-        <figure class="slot" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5-8 8"/></svg><span>Próximamente</span></figure>
+        <figure><button type="button"><img src="img/furgon-aluminio-persiana.webp" alt="Furgón de aluminio tipo persiana con puertas traseras en lámina alfajor" loading="lazy"></button><figcaption>Furgón en aluminio tipo persiana</figcaption></figure>
+        <figure><button type="button"><img src="img/interior-furgon-refrigerado.webp" alt="Interior de furgón refrigerado con piso en acero inoxidable y rieles de carga" loading="lazy"></button><figcaption>Interior de furgón refrigerado</figcaption></figure>
+        <figure><button type="button"><img src="img/furgon-persiana-azul.webp" alt="Furgón tipo persiana con marco azul sobre camión Foton blanco" loading="lazy"></button><figcaption>Furgón tipo persiana · Foton</figcaption></figure>
+        <figure><button type="button"><img src="img/pintura-piezas-cabina.webp" alt="Piezas de cabina recién pintadas en azul secándose en el taller" loading="lazy"></button><figcaption>Pintura de cabina</figcaption></figure>
       </div>
 
       <div class="cta">
